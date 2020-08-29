@@ -1,0 +1,27 @@
+<%- include("partials/header")-%>
+
+
+    <h3 class="title">Update</h3>
+    <form action="/update/<%= title%>" method="post">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" name="title" id="title" placeholder=" <%= title%>">
+            <label for="content">Content</label>
+            <textarea rows="5" cols="30" class="form-control" name="content" id="content" placeholder=" <%= content%>"></textarea>
+        </div>
+        <div class="update">
+            <button class="btn  btn-primary btn-sm update-button" type="submit">
+                <img class="update-icon" src="../img/update.png" > Update
+            </button>
+        </div>
+    </form>
+</div>
+<div class="footer">
+    <p>Copyright © Bunnybean <img id="footer-logo" src="../img/seolLogo.png" alt="logo"></p>
+</div>
+<script src="https://unpkg.com/lodash@4/lodash.min.js"></script>
+<script src="https://unpkg.com/lowdb@0.17/dist/low.min.js"></script>
+<script src="https://unpkg.com/lowdb@0.17/dist/LocalStorage.min.js"></script>
+</div>
+</body>
+</html>

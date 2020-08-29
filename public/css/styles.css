@@ -1,0 +1,231 @@
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* header */
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.headerBox {
+    background-color: #e84a5f;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.navbar-header a:hover {
+    text-decoration: none;
+}
+
+.navbar-nav  li a:hover {
+    background-color: #ff847c !important;
+    color:white;
+    border-radius: 30px;
+}
+
+.naveList {
+    padding-top: 7px;
+    font-weight: bold;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    margin-top: -20px;
+    margin-right: 15px;
+}
+
+.web-title {
+    width: 500px;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #feceab;
+}
+
+.web-title a:hover {
+    cursor: default;
+    text-decoration: none;
+}
+
+ul a {
+    color:#feceab;
+}
+
+
+/* Body */
+
+.body-container {
+    margin-top: 90px;
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+.compose-btn-search {
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    width:1140px;
+    padding-top: 40px;
+}
+.new-compose {
+    display: inline;
+}
+
+.search-container {
+    margin-top: -30px;
+    margin-left: 892px;
+}
+
+.search {
+    display: inline;
+    width: 500px;
+}
+
+.compose-contents {
+    padding-top: 110px;
+}
+
+.title {
+    margin-bottom: 60px;
+}
+
+label {
+    margin-bottom: 7px;
+    font-size: larger;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+h4 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 15px;
+    padding-right: 15px;
+}
+
+.post {
+    margin-bottom: 50px;
+}
+
+.randomImage {
+    margin-top: 110px;
+    padding-left: 30px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.content-inline {
+    display: inline;
+}
+
+.read-more {
+    margin-right: 30px;
+}
+
+.editDelete {
+    display: inline;
+    margin: 30px 20px 0 0;
+}
+
+.editDelete a:hover {
+    background-color: rgba(232, 74, 95, 0.5);
+    color:rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    text-decoration: none;
+    width: 200px;
+    height: 200px;
+}
+
+.editDelete span {
+    padding: 10px;
+}
+
+.editDelete-btn {
+    color: black;
+    width:200px;
+    height: 200px;
+    display: inline;
+}
+
+.icon {
+    color: #e84a5f;
+    margin-right: 3px;
+}
+
+.buttons {
+    margin-top: 7px;
+}
+
+/* Update */
+.update {
+    font-weight: bold;
+}
+
+.update-button {
+    font-weight: bold;
+}
+
+.update-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+}
+
+/* Footer */
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #f5efef;
+    position: fixed;
+    text-align: center;
+
+}
+
+.footer p {
+    font-size: 12px;
+    color: #e97171;
+    position: absolute;
+    bottom: -5px;
+    left: 45%;
+}
+
+#footer-logo {
+    width:30px;
+    height: 30px;
+}

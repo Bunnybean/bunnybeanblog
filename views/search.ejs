@@ -1,0 +1,37 @@
+<%- include("partials/header") -%>
+
+<div class="compose-btn-search">
+    <a class="new-compose" href="/compose"><button class="btn btn-primary">Compose Journal</button></a>
+    <div class="search-container">
+        <form class="search" action="/search" method="post">
+            <input type="search" placeholder="Search by title" aria-label="Search" name="searchTitle">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</div>
+<div class="compose-contents">
+    <% searchResults.forEach(function(result){ %>
+        <div class="post">
+            <h4><%= result.title %></h4>
+            <p class="content-inline"><%= post.content.substring(0,100) + " ..." %></p>
+            <a class="read-more" href="/posts/<%=result.title%>">Read More</a><br>
+            <div class="buttons">
+                <div class="editDelete">
+                    <a class="editDelete-btn" href="/update/<%=result.title%>">
+                        <span><i class="fas fa-edit icon"></i>
+                        Edit</span>
+                    </a>
+                </div>
+                <div class="editDelete">
+                    <a class="editDelete-btn" href="/delete/<%=result.title%>">
+                        <span><i class="fas fa-trash-alt icon"></i>
+                        Delete</span>
+                    </a>
+                </div>
+            </div>
+            <hr>
+        </div>
+    <% }); %>
+</div>
+
+<%- include("partials/footer") -%>
