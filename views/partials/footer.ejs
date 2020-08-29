@@ -1,0 +1,46 @@
+
+  </div>
+  <div class="footer">
+    <p>Copyright © Bunnybean <img id="footer-logo" src="img/seolLogo.png" alt="logo"></p>
+  </div>
+  <script src="https://unpkg.com/lodash@4/lodash.min.js"></script>
+  <script src="https://unpkg.com/lowdb@0.17/dist/low.min.js"></script>
+  <script src="https://unpkg.com/lowdb@0.17/dist/LocalStorage.min.js"></script>
+  <script>
+
+    // lowdb for local storage
+    var adapter = new LocalStorage('db')
+    var db = low(adapter)
+
+    db.defaults({ posts: [], user: [], count: 0 }).write();
+
+    db.get("user").push({
+      id:1,
+      name:"seol",
+      profile:"developer"
+    }).write();
+
+    db.get("posts").push({
+      id:1,
+      title: "lowdb",
+      description: "lowdb is...",
+      author: 1
+    }).write();
+
+    db.get("posts").push({
+      id:2,
+      title: "mySQL",
+      description: "mySQL is...",
+      author: 1
+    }).write();
+
+    console.log(db.get("posts").find({title:"lowdb", author:1}).value());
+
+    db.get("posts").find({id:2}).assign({title:"MYSQL & Mariadb"}).write();
+
+    db.get("posts").remove({id:2}).write();
+
+
+  </script>
+</body>
+</html>
